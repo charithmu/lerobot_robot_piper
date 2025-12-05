@@ -2,6 +2,15 @@
 
 This package provides integration between LeRobot and the Piper robot arm.
 
+> **📚 Documentation**: For a comprehensive technical analysis of how SO-101 joints are mapped to the Piper arm, see:
+> - **[SUMMARY.md](./SUMMARY.md)** - Quick overview and answers to common questions
+> - **[ANALYSIS.md](./ANALYSIS.md)** - Detailed technical analysis
+> - **[RECOMMENDATIONS.md](./RECOMMENDATIONS.md)** - Implementation improvements and fixes
+
+## ⚠️ Important Note: Joint Mapping
+
+The Piper arm has 6 degrees of freedom (joints 1-6), but the SO-101 teleoperation arm has only 5 arm joints. **Joint 4 on the Piper is not controlled during SO-101 teleoperation.** This is intentional - see [ANALYSIS.md](./ANALYSIS.md) for details.
+
 ## Installation
 
 ```bash
